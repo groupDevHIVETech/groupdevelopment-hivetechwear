@@ -14,12 +14,13 @@
     background-color: #fff;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 14px 28px;
+    box-shadow: 0 0px 20px;
 
 }
 .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding-top: 5%;
     padding-bottom: 15%;
 }
@@ -27,12 +28,30 @@
     padding: 2%;
 }
 
+.cart-title {
+    margin-left: 12vw;
+    padding-top: 15vw;
+}
+
+.adidas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adidas button {
+    background: white;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
 .checkout {
     font-size: 25px;
     margin: 10%;
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 79%;
+    margin-left: 60vw;
+    flex-direction: column;
 }
 
 input.button {
