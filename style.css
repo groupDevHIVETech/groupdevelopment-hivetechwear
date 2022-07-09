@@ -7,7 +7,7 @@
 .header{
     z-index: 2;
     padding: 8px 16px;
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     display: flex;
@@ -52,6 +52,30 @@
     width: 79%;
     margin-left: 60vw;
     flex-direction: column;
+    
+}
+
+
+.checkout-items {
+    border-bottom: black;
+    border-width: 1px;
+    border-bottom-style: groove;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: initial;
+
+}
+
+.checkout-items p {
+    margin-top: 30px;
+}
+
+.checkout-items h1 {
+    font-size: 40px;
+}
+
+.row-1 {
+    font-size: 20px;
 }
 
 input.button {
@@ -70,9 +94,9 @@ input.button {
 footer {
     background-color: #000;
     color: white;
-    width: 100%;
+    width: 111%;
+    margin-right: 18vw;
 }
-
 footer .foot-main {
     display: flex;
     width: 60%;
@@ -195,5 +219,43 @@ body{
 }
 .menu_box img{
     margin-left: 10px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 200px;
+    font-family: "avenir";
+}
+
+.row-1 {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 50px;
+}
+
+.row-1-1 {
+    display: flex;
+    gap: 50px;
+}
+
+
+.thank-you {
+    text-align: center;
+    margin-top: 167px;
+    margin-bottom: 200px;
+   
+}
+
+.thank-you h1 {
+    font-family: "Sen";
+}
+
+
+.thank-you p {
+  
+    margin-top: 30px;
+    font-family: "Sen";
+   
 }
 
