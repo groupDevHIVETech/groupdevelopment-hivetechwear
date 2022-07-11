@@ -47,11 +47,8 @@
 .checkout {
     font-size: 25px;
     margin: 10%;
-    display: flex;
-    justify-content: space-between;
     width: 79%;
-    margin-left: 60vw;
-    flex-direction: column;
+    text-align: right;
     
 }
 
@@ -65,6 +62,7 @@
     text-align: initial;
 
 }
+
 
 .checkout-items p {
     margin-top: 30px;
@@ -88,13 +86,13 @@ input.button {
 }
 
 .subtotal{
-    display: flex;
+    text-align: right;
 }
 
 footer {
     background-color: #000;
     color: white;
-    width: 111%;
+    width: 100%;
     margin-right: 18vw;
 }
 footer .foot-main {
@@ -120,7 +118,7 @@ footer .foot-logos {
 
 /****** Sign Up ****/
 .main-wrapper{
-    padding-top: 20%;
+    padding-top: 5%;
 }
 .sign-up{
     margin: 100px 0 100px 140px;
