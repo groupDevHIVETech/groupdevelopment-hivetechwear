@@ -1,0 +1,661 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Avenir", sans-serif;
+}
+
+/**************************/
+/******HEADER*****/
+/**************************/
+
+.black-line {
+  border-bottom: 1px solid black;
+}
+
+.white-line {
+  border-bottom: 1px solid white;
+}
+
+header {
+  z-index: 2;
+  padding: 10px 20px;
+  position: fixed;
+  background-color: white;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px;
+  display: flex;
+  width: 100%;
+}
+header .icon {
+  width: 30;
+}
+
+header .icon h2 {
+  width: 50px;
+}
+
+header .search-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+header .search-icon .search {
+  flex-basis: 40%;
+  position: relative;
+}
+header .search-icon .search input {
+  background-color: dimgray;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: 0;
+}
+header .search-icon .search img {
+  position: absolute;
+  right: 7%;
+  top: 20%;
+}
+::placeholder {
+  color: #fff;
+}
+header .search-icon a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+header .sm {
+  display: none;
+}
+.main-image img {
+  width: 100%;
+  display: block;
+}
+/**************************/
+/* sign up */
+/**************************/
+
+.sign-up-container {
+  position: relative;
+}
+
+.sign-up-container .sign-up {
+  width: 50%;
+  padding: 72px 105px;
+}
+.sign-up h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.sign-up p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.sign-up input {
+  font-size: 16px;
+  width: 70%;
+  padding: 10px 10px;
+  border: 0;
+  background-color: #eaeaea;
+}
+/* .sign-up button {
+    font-size: 22px;
+    background-color: black;
+    margin: 20px 0px;
+    padding: 10px 25px;
+    width: auto;
+    color: #fff;
+    border: 0;  
+    height: 45px;
+  }  */
+
+button {
+  margin: 0px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 24px;
+  width: 60px;
+}
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/***********************/
+/***** Responsive *****/
+@media screen and (max-width: 450px) {
+  header .search-icon {
+    display: none;
+  }
+  header .sm {
+    display: block;
+  }
+  .sign-up-container .sign-up {
+    width: 100%;
+    padding: 11px 12px;
+  }
+  .sign-up button {
+    font-size: 9px;
+    margin: 16px 188;
+    padding: 11px 11px;
+    height: 27px;
+  }
+  footer {
+    width: 474px;
+  }
+  footer .hot-links {
+    padding: 16px 17px;
+  }
+
+  .hot-links .footer_col a {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 451px) and (max-width: 850px) {
+    .sign-up-container .sign-up {
+      padding: 0px 48px;
+      position: relative;
+      width: 100%;
+      height: 495px;
+      justify-content: center;
+    }
+    .sign-up button {
+      height: 24px;
+      width: 67px;
+      margin: 0;
+      padding: 12px 8px;
+    }
+    /* button {
+      margin: 0px;
+      background-color: black;
+      color: white;
+      border: none;
+      
+  } */
+  }
+  header {
+    padding: 0px;
+    margin: 0px;
+    height: 73px;
+    width: 100%;
+  }
+
+  footer .hot-links {
+    padding: 11px 19px;
+  }
+}
+
+/**************************/
+/* ordering page */
+/**************************/
+main {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 10% 20px;
+}
+main .Ordering {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+main .Ordering :last-child {
+  margin-bottom: 0;
+}
+main .Ordering h3 {
+  margin: 40px 0 25px 0;
+  text-align: center;
+}
+main .Ordering p {
+  margin-top: 16px;
+  line-height: 24px;
+  margin: 30px 0 25px 0;
+  text-align: center;
+}
+
+/***********************/
+/***** Responsive sign UP PAGE *****/
+@media screen and (max-width: 450px) {
+  header .search-icon {
+    display: none;
+  }
+  header .sm {
+    display: block;
+  }
+  .sign-up-container .sign-up {
+    width: 100%;
+    padding: 11px 12px;
+  }
+  .sign-up button {
+    font-size: 9px;
+    margin: 16px 188;
+    padding: 11px 11px;
+    height: 27px;
+  }
+
+  footer {
+    width: 474px;
+  }
+  footer .hot-links {
+    padding: 16px 17px;
+  }
+
+  .hot-links .footer_col a {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 451px) and (max-width: 850px) {
+    .sign-up-container .sign-up {
+      padding: 0px 48px;
+      position: relative;
+      width: 100%;
+      height: 495px;
+      justify-content: center;
+    }
+    .sign-up button {
+      height: 24px;
+      width: 67px;
+      margin: 0;
+      padding: 12px 8px;
+    }
+    /* button {
+      margin: 0px;
+      background-color: black;
+      color: white;
+      border: none;
+      
+  } */
+  }
+  header {
+    padding: 0px;
+    margin: 0px;
+    height: 73px;
+    width: 100%;
+  }
+
+  footer .hot-links {
+    padding: 11px 19px;
+  }
+}
+
+/**************************/
+/* Men's T-shirts */
+/**************************/
+
+.top {
+  display: flex;
+  margin: 0% 0 0 4%;
+}
+
+h2 .product-category1 {
+  margin-left: 115px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+h3 .product-category1 {
+  margin-left: 115px;
+  font-size: 30px;
+  font-weight: 100;
+}
+.main_image img {
+  width: 100%
+}
+.description {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  
+}
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 20px;
+}
+.product-container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  padding: 200px;
+}
+
+.product-container1 .product-image1 {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-image1:hover {
+  opacity: .7;
+}
+
+.product-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.product-image2:hover {
+  opacity: .7;
+}
+.product2 {
+  position: relative;
+  padding: 20px 
+}
+
+.form-control {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  width: 100%;
+  border: 0;
+  margin-right: 20px;
+}
+button {
+  margin: 55px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 24px;
+  width: 60px;
+  font-size: 14px;
+}
+.product-info .product-brand {
+  font-size: 21px;
+  font: icon;
+}
+.product-info .product-brand :hover {
+  background-color: #eaeaea;
+}
+.product-card .product-info {
+  padding: 5%;
+}
+.blog-form .blog-sidebar {
+  margin-top: 8%;
+  font-size: 17px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.blog-form {
+  border-bottom: 1px solid black;
+}
+
+.blog-form .blog-sidebar img {
+  width: 15px;
+}
+
+.product {
+  position: relative;
+  padding: 20px 0;
+}
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.product-container {
+  /* padding: 0 25vw; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px;
+  justify-content: flex-end;
+}
+.product-card {
+  flex: 0 0 auto;
+  width: 234px;
+  height: 450px;
+  margin-right: 40px;
+}
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+.product-image img {
+  width: 90%;
+}
+
+/***********************/
+/***** Responsive *****/
+@media screen and (max-width: 450px) {
+  header .search-icon {
+    display: none;
+  }
+  header .sm {
+    display: block;
+  }
+  .sign-up-container .sign-up {
+    width: 100%;
+    padding: 11px 12px;
+  }
+  .sign-up button {
+    font-size: 9px;
+    margin: 16px 188;
+    padding: 11px 11px;
+    height: 27px;
+  }
+
+  footer {
+    width: 474px;
+  }
+  footer .hot-links {
+    padding: 16px 17px;
+  }
+
+  .hot-links .footer_col a {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 451px) and (max-width: 850px) {
+    .sign-up-container .sign-up {
+      padding: 0px 48px;
+      position: relative;
+      width: 100%;
+      height: 495px;
+      justify-content: center;
+    }
+    .sign-up button {
+      height: 24px;
+      width: 67px;
+      margin: 0;
+      padding: 12px 8px;
+    }
+    /* button {
+      margin: 0px;
+      background-color: black;
+      color: white;
+      border: none;
+      
+  } */
+  }
+  header {
+    padding: 0px;
+    margin: 0px;
+    height: 73px;
+    width: 100%;
+  }
+
+  footer .hot-links {
+    padding: 11px 19px;
+  }
+}
+
+/******************************/
+/*******************************/
+/******* product. Mens**********/
+h2.product-category2 {
+  margin-left: 10%;
+  font-size: 27px;
+  font-weight: 100;
+}
+.Wrap {
+  padding-right: 50%;
+}
+
+.Wrap .pagination {
+  display: inline-block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 0 4px;
+  justify-content: center;
+}
+
+button {
+  margin: 55px;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 24px;
+  width: 60px;
+  font-size: 14px;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  width: 100%;
+}
+footer .hot-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  color: #fff;
+  padding: 11px 76px;
+}
+footer .hot-links li {
+  list-style: none;
+  padding: 10px 0px;
+}
+footer .hot-links .footer_col a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+footer .copyright {
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding: 10px 10px;
+}
+/***********************/
+/***** Responsive *****/
+@media screen and (max-width: 450px) {
+  header .search-icon {
+    display: none;
+  }
+  header .sm {
+    display: block;
+  }
+  .sign-up-container .sign-up {
+    width: 100%;
+    padding: 11px 12px;
+  }
+  .sign-up button {
+    font-size: 9px;
+    margin: 16px 188;
+    padding: 11px 11px;
+    height: 27px;
+  }
+
+  footer {
+    width: 474px;
+  }
+  footer .hot-links {
+    padding: 16px 17px;
+  }
+
+  .hot-links .footer_col a {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 451px) and (max-width: 850px) {
+    .sign-up-container .sign-up {
+      padding: 0px 48px;
+      position: relative;
+      width: 100%;
+      height: 495px;
+      justify-content: center;
+    }
+    .sign-up button {
+      height: 24px;
+      width: 67px;
+      margin: 0;
+      padding: 12px 8px;
+    }
+    /* button {
+      margin: 0px;
+      background-color: black;
+      color: white;
+      border: none;
+      
+  } */
+  }
+  header {
+    padding: 0px;
+    margin: 0px;
+    height: 73px;
+    width: 100%;
+  }
+
+  footer .hot-links {
+    padding: 11px 19px;
+  }
+}
+main .ordering {
+  background-color: #fff;
+  padding: 80px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+main .ordering :last-child {
+  margin-bottom: 0;
+}
+main .ordering h3 {
+  margin: 30px 0 25px 0;
+  text-align: center;
+}
+main .ordering p {
+  margin-top: 16px;
+  line-height: 24px;
+  margin: 30px 0 25px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #000;
+  width: 100%;
+  position: relative;
+  padding: 5px;
+  bottom: 0;
+}
+footer .hot-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  color: #fff;
+  padding: 50px 100px;
+}
+footer .hot-links li {
+  list-style: none;
+  padding: 10px 0px;
+}
+footer .hot-links .footer_col a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .copyright {
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding: 10px 10px;
+}
