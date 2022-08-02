@@ -1,7 +1,7 @@
 # Hive Techware in React & Redux + Django
 
 ```
-A convenient and fun way to browse featured clothing & accessories from some of the best
+Hive Techwear is a convenient and fun way to browse featured clothing & accessories from some of the best
 clothing brands online, especially aimed at teenagers. With this web app, you can browse
 products by any color you like or by trending colors, save products into favorites, and 
 share products with friends on social media.
